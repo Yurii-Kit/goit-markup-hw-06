@@ -57,7 +57,7 @@
           </ul>
         </address>
 
-        <button class="burger-btn" type="button">
+        <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
@@ -65,9 +65,9 @@
       </div>
 
       <!-- MOBILE MENU -->
-      <div class="mobile-menu">
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" type="button">
+          <button class="mobile-menu-close" type="button" data-menu-close>
             <svg class="mobile-menu-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -82,43 +82,43 @@
             <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
           </ul>
 
-          <address class="mobile-contacts">
-            <ul class="contacts-list">
-              <li class="contact-item">
-                <a class="contacts-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact-item">
-                <a class="contacts-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
+          <ul class="mobile-contacts-list">
+            <li class="mobile-contact-item">
+              <a
+                class="mobile-contacts-link active"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-contact-item">
+              <a class="mobile-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
 
-          <ul class="mobile-social-list">
+          <ul class="mobile-social-list social-list">
             <li class="social-item">
               <a class="social-link" href="">
-                <svg class="social-icon" width="16" height="16">
+                <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="social-item">
               <a class="social-link" href=""
-                ><svg class="social-icon" width="16" height="16">
+                ><svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use></svg
               ></a>
             </li>
             <li class="social-item">
               <a class="social-link" href=""
-                ><svg class="social-icon" width="16" height="16">
+                ><svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use></svg
               ></a>
             </li>
             <li class="social-item">
               <a class="social-link" href=""
-                ><svg class="social-icon" width="16" height="16">
+                ><svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use></svg
               ></a>
             </li>
@@ -133,7 +133,9 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -749,9 +751,10 @@
       </div>
     </footer>
 
-    <div class="hide backdrope is-open">
+    <!-- BACKdrope -->
+    <div class="backdrope" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button">
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -813,6 +816,7 @@
             ></textarea>
           </div>
 
+          <!-- CHECKBOX -->
           <div class="modal-form-agreement">
             <input
               class="visually-hidden"
@@ -827,15 +831,19 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-form-agreement-link" href="#"
-                >Privacy Policy</a
-              ></label
-            >
+              <span
+                >I accept the terms and conditions of the
+                <a class="modal-form-agreement-link" href="#"
+                  >Privacy Policy</a
+                ></span
+              >
+            </label>
           </div>
           <button class="low-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
