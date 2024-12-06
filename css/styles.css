@@ -1041,8 +1041,7 @@ button {
   font-weight: 500;
   color: #2e2f42;
 }
-.modal-form {
-}
+
 .modal-form-field {
   margin-bottom: 8px;
 }
@@ -1160,9 +1159,6 @@ input[type="checkbox"]:focus-visible
   .modal-form-checkbox {
   outline: 2px solid #404bbf;
   outline-offset: 2px;
-}
-
-.modal-form-checkbox-icon {
 }
 
 .modal-form-agreement-link {
