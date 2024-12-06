@@ -1,2 +1,2 @@
-# goit-markup-hw-04
+# goit-markup-hw-06
 HTNL+CSS course
